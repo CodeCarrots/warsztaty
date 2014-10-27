@@ -1,4 +1,4 @@
-'''Gra w 
+'''Gra w kamien-nozyczki-papier
 '''
 
 import random
