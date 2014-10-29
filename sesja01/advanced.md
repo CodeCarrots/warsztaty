@@ -21,14 +21,14 @@ następująco:
 ```python
 # porownujemy symbole
 if player_choice == "k" and computer_choice == "n":
-# kamien (gracz) vs nozyczki (komputer) = wygrywa kamien (czyli gracz)
-player_victory = True
+    # kamien (gracz) vs nozyczki (komputer) = wygrywa kamien (czyli gracz)
+    player_victory = True
 elif player_choice == "n" and computer_choice == "p":
-# nozyczki (gracz) vs papier (komputer) = wygrywaja nozyczki
-player_victory = True
+    # nozyczki (gracz) vs papier (komputer) = wygrywaja nozyczki
+    player_victory = True
 elif player_choice == "p" and computer_choice == "k":
-# papier (gracz) vs kamien (komputer) = wygrywa papier
-player_victory = True
+    # papier (gracz) vs kamien (komputer) = wygrywa papier
+    player_victory = True
 ```
 
 Można oczywiście dopisać w podobny sposób kolejne warunki. Zadziała?
