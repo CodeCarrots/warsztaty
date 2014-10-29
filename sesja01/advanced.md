@@ -1,10 +1,12 @@
 Kamień, nożyczki, papier ...
 ============================
 
-W pliku knp_final.py znajduje się działająca wersja gry "Kamień,
-nożyczki, papier". Jednak to nie znaczy, że jest to już wersja
-ostateczna. Spróbuj zaprogramować przynajmniej jedno z poniższych
-rozszerzeń.
+W pliku [knp_final.py](./knp_final.py) znajduje się działająca wersja
+gry "Kamień, nożyczki, papier". Jednak to nie znaczy, że jest to już
+wersja ostateczna. Spróbuj zaprogramować przynajmniej jedno z
+poniższych rozszerzeń. Możesz użyć pliku
+[knp_extra.py](./knp_extra.py) jako punktu wyjściowego - zawiera on
+dodatkowe komentarze które mogą być pomocne.
 
 
 ... Lizard, Spock
