@@ -1,85 +1,26 @@
-# -*- coding: utf-8 -*-
-
-'''
-Klon gry Mastermind oparty na "frameworku"
+'''Szablon z zarysem prostego "framework'u" dla tworzenia prostych gier.
 '''
 
-# Funkcje frameworkowe z implementacja zasad gry Mastermind
-
-def getMaxNumberOfGuesses():
-    return 10
-
-
-def getGuessCount():
-    return 3
+##
+# jeżeli używamy dodatkowych modułów to zaimportujmy je tutaj
+# ...
 
 
-def getRiddleSet():
-    return "RBGY"
+##
+# definicje funkcji i zmiennych globalnych powinny znaleźć się tutaj
+# ...
 
 
-def printGameDescription():
-    print("Mastermind: gra polega na odgadnięciu %s-literowego kodu składającego się z liter %s." % (
-        getGuessCount(),
-        getRiddleSet(),
-    ))
-    print("Masz na to %s prób(y)." % getMaxNumberOfGuesses())
-
-
-def getRiddle():
-    riddle = ""
-    for i in range(getGuessCount()):
-        riddle += random.choice(getRiddleSet())
-#    riddle = ''.join(random.choice(getRiddleSet())
-#        for _ in range(getGuessCount()))
-#    print ("Riddle: ", riddle)
-    return riddle
-
-
-def getUserGuess():
-    return input("Podaj kod: ")
-
-
-def evaluateGuess(riddle, player_choice):
-    if riddle == player_choice:
-        return True
-    else:
-        correct_place = 0
-        correct_not_in_place = 0
-        for i in range(getGuessCount()):
-            if riddle[i] == player_choice[i]:
-                correct_place += 1
-            elif player_choice[i] in riddle:
-                    correct_not_in_place += 1
-        print ("Prawidłowe miejsce: ", correct_place)
-        print ("Kod jest ale w innym miejscu: ", correct_not_in_place)
-
-
-def printCongratulations(riddle):
-    print("Gratulacje! Zgadłeś kod. Kod to:", riddle)
-
-
-def validateGuess(user_guess):
-    correct_chars = True
-    for letter in user_guess:
-        if letter not in getRiddleSet():
-            correct_chars = False
-    if len(user_guess) == getGuessCount() and correct_chars:
-        return True
-    else:
-        print ("Nieprawidłowa odpowiedź.")
-        return False
-
-# gra wlasciwa
-
-import random
+##
+# kod głównej pętli gry
+#
 
 printGameDescription()
 # flaga kontynuacji gry: True = gramy (kolejna) runde
 keep_playing = True
 max_guesses = getMaxNumberOfGuesses()
 
-# glowna petla gry
+# główna pętla gry
 while keep_playing:
     riddle = getRiddle()
     riddle_guessed = False
@@ -105,6 +46,3 @@ while keep_playing:
     if next_game == "n":
         # nie, konczymy...
         keep_playing = False
-
-
-# vim: ts=4:sw=4:et:fdm=indent:ff=unix
