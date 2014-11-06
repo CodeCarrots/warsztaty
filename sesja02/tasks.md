@@ -7,8 +7,8 @@ np. 1-99) gdy ma na to zadaną liczbę prób a po każdej nieudanej próbie
 program podpowiada czy zgadywana liczba jest większa czy mniejsza od
 tej wybranej przez program.
 
-Gier ciąg dalszy...
 
+Gier ciąg dalszy...
 ===================
 
 W pliku [game_template.py](./game_template.py) znajduje się
