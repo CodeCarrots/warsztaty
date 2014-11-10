@@ -21,6 +21,16 @@ Szybkie wyznaczanie wygranego w K-N-P-L-S:
   i przeprowadzając proste obliczenia możemy wyznaczyć zwycięzcę :)
 
 
+Wisielec
+--------
+
+Dajemy użytkownikowi 7 (siedem) prób na odgadnięcie hasła. Każda nieudana próba
+to dodatkowy element rysunku "wisielca". Cały rysunek oznacza koniec gry
+i przegraną gracza. Słowo jest losowane ze słownika - dla uproszczenia (?)
+można przyjąć, że słowa są tylko rzeczownikami - albo tylko angielskimi albo
+polskimi, nie zawierającymi polskich liter.
+
+
 Detekcja języka
 ---------------
 
