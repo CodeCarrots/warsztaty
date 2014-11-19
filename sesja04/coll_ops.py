@@ -91,6 +91,8 @@ b = krotka[2:]
 
 a = lista[0:2]
 b = lista[2:]
+lista = [1, 2, 3, 4, 5, 6, 7, 8]
+lista[0:-1:2]
 
 
 # concatenate / join / add many
