@@ -1,4 +1,4 @@
-import tamagochi
+import tamagotchi
 # TODO: import food
 # TODO: import meal
 
@@ -6,10 +6,10 @@ import tamagochi
 ##
 # głównym zadaniem jest zaimplementować "jadalne" klasy w plikach
 # food.py i meal.py tak aby można było je wykorzystać do nakarmienia
-# przykładowego Tamagotchi zaimplementowanego w pliku tamagochi.py
+# przykładowego Tamagotchi zaimplementowanego w pliku tamagotchi.py
 
 
-# TODO: tutaj utwórz jeden obiekt Tamagochi (nazwij go jakoś zabawnie! ;)
+# TODO: tutaj utwórz jeden obiekt Tamagotchi (nazwij go jakoś zabawnie! ;)
 # np.:
 #
 # bftI = tamagotchi.Tamagotchi('Bardzo Formalny Tamagotchi I')
